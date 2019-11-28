@@ -21,7 +21,7 @@
                     <Row class-name="made-child-con-middle" type="flex" align="middle">
                       <div>
                         <b class="card-user-info-name">{{ username }}</b>
-                        <p>XBoot 欢迎您的使用</p>
+                        <p>让梦想在殿堂闪亮发光！</p>
                       </div>
                     </Row>
                   </Col>
@@ -35,47 +35,7 @@
                 </Row>
               </Card>
             </Col>
-            <Col :lg="12" :xl="24" style="margin-bottom: 10px;">
-              <Card>
-                <p slot="title">
-                  <Icon type="logo-github" size="20" style="margin-right:5px" />
-                  <a href="https://github.com/Exrick/x-boot" target="_blank">XBoot开源版本地址</a>
-                </p>
-                <p slot="extra">
-                  <a target="_blank" href="http://exrick.cn">作者：Exrick</a>
-                </p>
-                <div style="height: 268px;">
-                  <Timeline>
-                    <TimelineItem>
-                      <Icon type="logo-youtube" color="#fb7299" slot="dot"></Icon>
-                      <a @click="showVideo=true">作者亲自制作XBoot文字快闪宣传片 点我观看</a>
-                    </TimelineItem>
-                    <TimelineItem>
-                      <Icon type="logo-youtube" color="#fb7299" slot="dot"></Icon>
-                      <a
-                        href="https://www.bilibili.com/video/av23121122/"
-                        target="_blank"
-                      >作者亲自制作各项目宣传视频 点我观看</a>
-                    </TimelineItem>
-                    <TimelineItem>
-                      <Icon type="md-barcode" color="black" slot="dot"></Icon>
-                      <a href="https://github.com/Exrick/Machine-Learning" target="_blank">个人机器学习笔记</a>
-                    </TimelineItem>
-                    <TimelineItem>
-                      <Icon type="md-cart" color="#f4364c" slot="dot"></Icon>
-                      <a href="http://xmall.exrick.cn" target="_blank">XMall开源分布式商城</a>
-                    </TimelineItem>
-                    <TimelineItem>
-                      <Icon type="md-cash" color="#19be6b" slot="dot"></Icon>
-                      <a href="http://xpay.exrick.cn" target="_blank">XPay开源个人免签支付系统</a>
-                    </TimelineItem>
-                    <TimelineItem>
-                      <Icon type="md-people" color="#57a3f3" slot="dot"></Icon>QQ交流群 475743731(付费) 562962309(免费)
-                    </TimelineItem>
-                  </Timeline>
-                </div>
-              </Card>
-            </Col>
+            
           </Row>
         </Col>
         <Col :lg="24" :xl="16">
@@ -118,79 +78,7 @@
               ></info-card>
             </Col>
           </Row>
-          <Row>
-            <Col :lg="24" :xl="12" style="padding: 0 5px 10px 0;">
-              <Card>
-                <p slot="title" style="overflow:visible">
-                  <a href="http://xpay.exrick.cn/pay?xboot" target="_blank">
-                    <Icon type="ios-star" size="20" style="margin-right:5px"></Icon>
-                    <Badge dot>立即获取 XBoot 完整版</Badge>
-                  </a>
-                </p>
-                <div style="height:368px;overflow:auto">
-                  <div class="qr">
-                    <img src="@/assets/qr.png" width="120" />
-                    <div>
-                      支持手机扫码支付，限时优惠！
-                      <br />赠送
-                      <a
-                        href="https://v.qq.com/x/page/f0627kf4x1e.html"
-                        target="_blank"
-                      >XMall小程序(不含后台)</a> +
-                      <a href="https://github.com/Exrick/xpay" target="_blank">最新XPay个人收款支付系统</a>
-                    </div>
-                  </div>
-                  <div class="flex">
-                    完整版(仅供学习)：
-                    <span class="rmb">￥</span>
-                    <span class="price">198</span>
-                    <span class="origin">￥</span>
-                    <s class="origin">258</s>
-                    <Button
-                      to="http://xpay.exrick.cn/pay?xboot"
-                      target="_blank"
-                      type="error"
-                      icon="md-paper-plane"
-                      style="margin-left:10px;"
-                    >立即获取</Button>
-                  </div>
-                  <div class="flex">
-                    商用授权价格：
-                    <span class="rmb">￥</span>
-                    <span class="price">7998</span>
-                    <span class="origin">￥</span>
-                    <s class="origin">9998</s>
-                    <span class="origin" style="font-size: 8px">起</span>
-                    <Button
-                      to="http://wpa.qq.com/msgrd?v=3&uin=1012139570&site=qq&menu=yes"
-                      target="_blank"
-                      type="warning"
-                      icon="logo-vimeo"
-                      style="margin-left:10px;"
-                    >获取商用授权</Button>
-                    <br />
-                  </div>
-                  <Alert style="padding: 8px 16px 8px 16px;font-size:12px">
-                    支付后源码和更新维护群将自动发至您在支付页面所填写的邮箱，
-                    <span
-                      class="light"
-                    >完整版与商用版都拥有在线demo全部功能，提供永久免费更新，但前者仅供学习使用。</span>
-                    开源版本请遵循GPLv3.0开源协议，
-                    <span class="light">不得闭源</span>，商用需求请联系作者签署授权协议。
-                    价格可能随功能逐渐完善或物价变化。
-                  </Alert>
-                </div>
-              </Card>
-            </Col>
-            <Col :lg="24" :xl="12" style="padding: 0 0 10px 5px;">
-              <Card>
-                <p slot="title">
-                  <Icon type="md-bookmark" style="margin-right:5px"></Icon>ISSUE/评论/更新日志
-                </p>
-                <div id="comments" style="height:365px;overflow:auto;" class="inner-container"></div>
-              </Card>
-            </Col>
-          </Row>
+          
         </Col>
       </Row>
       <Row :gutter="10">
@@ -209,23 +97,7 @@
       <h1>⬅️ 我是小程序与Flutter App的首页，点击左侧菜单查看详情</h1>
     </div>
 
-    <Modal
-      v-model="showVideo"
-      title="作者亲自制作XBoot炫酷文字快闪宣传片"
-      :styles="{top: '30px'}"
-      footer-hide
-      width="1000"
-    >
-      <iframe
-        src="//player.bilibili.com/player.html?aid=30284667&cid=52827707&page=1"
-        scrolling="no"
-        border="0"
-        frameborder="no"
-        framespacing="0"
-        allowfullscreen="true"
-        style="width:100%;height:550px;"
-      ></iframe>
-    </Modal>
+    
   </div>
 </template>
 
