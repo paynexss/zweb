@@ -16,9 +16,10 @@ spring:
   # 数据源
   datasource:
     url: jdbc:mysql://127.0.0.1:3306/xboot?useUnicode=true&characterEncoding=utf-8&useSSL=false
-    username: root
+    username: xboot
     # Jasypt加密 可到common-utils中找到JasyptUtil加解密工具类生成加密结果 格式为ENC(加密结果)
-    password: ENC(F4B0s6u9xcDw3V+P0qC4CA==)
+    #password: ENC(F4B0s6u9xcDw3V+P0qC4CA==)
+    password: as38096770
     type: com.alibaba.druid.pool.DruidDataSource
     driverClassName: com.mysql.jdbc.Driver
     logSlowSql: true
@@ -140,13 +141,13 @@ xboot:
   # 第三方社交登录配置
   social:
     # 前端回调登录地址
-    callbackFeUrl: http://127.0.0.1:9999/login
+    callbackFeUrl: https://home.zhitata.com/login
     # 前端绑定账号回调地址
-    callbackFeRelateUrl: http://127.0.0.1:9999/relate
+    callbackFeRelateUrl: https://home.zhitata.com/relate
     # github
     github:
-      clientId: 你的clientId
-      clientSecret: 你的clientSecret
+      clientId: be4e2a6a676529e380d8
+      clientSecret: b0d10fb66b64df4af3574c14fdbf7e180c4c8e62
       callbackUrl: http://127.0.0.1:8888/xboot/social/github/callback
     # qq
     qq:
@@ -155,8 +156,8 @@ xboot:
       callbackUrl: http://127.0.0.1:8888/xboot/social/qq/callback
     # weibo
     weibo:
-      appKey: 你的appKey
-      appSecret: 你的appSecret
+      appKey: 4193328285
+      appSecret: d33209fde11e5967245da7f8cc46ba02
       callbackUrl: http://127.0.0.1:8888/xboot/social/weibo/callback
     # wechat
     wechat:
