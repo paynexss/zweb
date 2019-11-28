@@ -108,9 +108,8 @@
             <Dropdown trigger="click" @on-click="handleDropDown">
               <a class="forget-pass">{{ $t('forgetPass') }}</a>
               <DropdownMenu slot="list">
-                <DropdownItem name="showAccount">体验测试账号</DropdownItem>
-                <DropdownItem name="resetByMobile">使用手机号重置密码(付费)</DropdownItem>
-                <DropdownItem name="resetByEmail">使用邮箱重置密码(付费)</DropdownItem>
+                <DropdownItem name="resetByMobile">使用手机号重置密码</DropdownItem>
+                <DropdownItem name="resetByEmail">使用邮箱重置密码</DropdownItem>
               </DropdownMenu>
             </Dropdown>
           </Row>
@@ -474,17 +473,9 @@ export default {
         });
       }
     },
-    showAccount() {
-      this.$Notice.info({
-        title: "体验账号密码",
-        desc:
-          "账号1：test 密码：123456 <br>账号2：test2 密码：123456 已开放注册！",
-        duration: 10
-      });
-    }
+
   },
   mounted() {
-    this.showAccount();
     this.relatedLogin();
     this.getCaptchaImg();
   }

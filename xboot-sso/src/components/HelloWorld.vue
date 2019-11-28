@@ -1,6 +1,6 @@
 <template>
   <div class="hello">
-    <h1>欢迎来到XBoot前后端分离开发平台单点登录测试站点</h1>
+    <h1>欢迎来到智他她开发平台单点登录测试站点</h1>
     <h1>sso.exrick.cn</h1>
 
     <RadioGroup v-model="mode" style="margin-top:30px;">
